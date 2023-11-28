@@ -3,20 +3,24 @@ console.log(flavors)
 const flavorsArr = flavors.split(',')
 console.log(flavorsArr)
 
-function countFlavors(flavors){
+function countFlavors(arr) {
     const output = []
-    for(i = 0; i < flavorsArr.length; i++) {
-        if (flavors[flavor] === undefined) 
-        return flavors
-    }
+    for(i = 0; i < arr.length; i++) {
+        const flavor = arr[i] 
+        if (output[flavor] === undefined){ 
+            return output
+        } else {
+            return output++
+        }
+    } 
 }
 
-const numFlavors = countFlavors(flavors)
+const numFlavors = countFlavors(flavorsArr)
 
 console.log(numFlavors)
 
-/* I'm honestly not sure how to do this one. I tried to review the
-    the slides over the weekend and redo the workshop but it's still
-    a little confusing. */
+/* I'm still a little confused on this one. I'm not sure what 
+it is but for some reason it looks like the if statement is 
+not looping through the array. */
 
     
